@@ -6,7 +6,7 @@ An exercise using React, Redux, and Typescript.
 
 - [x] board
 - [x] pieces
-- [-] moving pieces
+- [ ] moving pieces
   - [x] desktop
   - [ ] mobile
 - [x] move validation
