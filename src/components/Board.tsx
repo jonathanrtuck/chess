@@ -62,7 +62,7 @@ const Board: SFC<Props> = ({
     if (!hasMove) {
       const isInCheck: boolean = isCheck(pieces, turn);
 
-      window.alert(isInCheck ? 'checkmate' : 'draw');
+      window.alert(isInCheck ? 'checkmate' : 'stalemate');
     }
   }, [turn]);
 
