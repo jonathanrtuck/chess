@@ -1,4 +1,4 @@
-# chess
+# [chess](https://jonathanrtuck.github.io/chess/dist/)
 
 An exercise using React, Redux, and Typescript.
 
