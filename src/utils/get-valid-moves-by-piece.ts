@@ -155,6 +155,12 @@ const getValidPawnMoves = (
   ).filter(
     (square: Square): boolean => {
       const otherColor: PieceColor = getOtherPieceColor(color);
+
+      // normal capture
+      if (get(getPieceBySquare(pieces, square), 'color') === otherColor) {
+        return true;
+      }
+
       const neighboringSquare: Square = getSquareByOffset(
         square,
         0,
@@ -164,11 +170,6 @@ const getValidPawnMoves = (
         pieces,
         neighboringSquare
       );
-
-      // normal capture
-      if (get(getPieceBySquare(pieces, square), 'color') === otherColor) {
-        return true;
-      }
 
       // en passant
       if (

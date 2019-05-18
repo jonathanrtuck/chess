@@ -7,7 +7,6 @@ export default (pieces: Piece[], color: PieceColor): boolean => {
   const king: Piece = pieces
     .filter((piece: Piece): boolean => piece.color === color)
     .find(({ type }): boolean => type === PieceType.King);
-
   const attackedSquares: Square[] = flatten(
     pieces
       .filter(
