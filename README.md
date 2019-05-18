@@ -17,6 +17,11 @@ An exercise using React, Redux, and Typescript.
 - [ ] pawn promotion
 - [ ] threefold repetition
 - [ ] 50-move draw
+- [ ] reset game
+- [ ] offer draw
+- [ ] choose color
+- [ ] choose players
+- [ ] undo
 
 ## Installation
 
